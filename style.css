@@ -75,6 +75,44 @@
     }
 .main-header a:hover
     {
-        background-color: cornsilk;
-        color: black;
+        color:red;
     }
+.carousel{
+    display: flex;
+    flex-direction: inherit;
+    border: 1px;
+    border-color: darkolivegreen;
+    overflow: auto;
+    background-color: darkseagreen;
+}
+.carousel-left {
+    width: 60%;
+    padding: 0 10%;
+}
+.carousel-right {
+    width: 40%;
+}
+.carousel-right img{
+    margin: 0 6%;
+    width: 88%;
+}
+.carousel-left .desc-1{
+    margin: 15% 0 0 0;
+}
+.carousel-left .desc-1 h4{
+    margin: 0;
+    font-size: 1rem;
+}
+.carousel-left .desc-2{
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+    margin: 3% 23.5% 0 0;
+    font-size: 3rem;
+}
+.carousel-left .desc-3{
+    font-size: 1rem;
+    margin: 2.5% 27% 0 0;
+}
+.carousel-left .desc-3 p::first-letter{
+    font-size: 200%;
+}
