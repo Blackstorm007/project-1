@@ -81,7 +81,7 @@
     display: flex;
     flex-direction: inherit;
     border: 1px;
-
+    margin: 0 0 7% 0;
     overflow: auto;
 
 }
@@ -121,7 +121,7 @@
     flex-wrap: wrap;
     flex-direction: inherit;
     height: 400px;
-    margin: 0 10% 0 10% ;
+    margin: 0 10% 7% 10% ;
 }
 .speciality .desc-4 img{
     height: auto;
@@ -168,3 +168,52 @@
     font-size: 1rem;
     line-height: 1.8;
 }
+.speciality .desc-4:hover{
+    box-shadow: 2px 2px;
+}
+.speciality-jeera:hover{
+    box-shadow: 2px 2px;
+}
+.speciality-greeng:hover{
+    box-shadow: 2px 2px;
+}
+.speciality-AM:hover{
+    box-shadow: 2px 2px;
+}
+.footer-main{
+    background-color: darkgray;
+}
+.footer-main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: inherit;
+    height: 400px;
+    padding: 0 10% 7% 10% ;
+}
+footer-left{
+    width: 60%;
+}
+footer-right{
+    width: 40%;
+}
+.footer-left h4{
+    margin-bottom: 23px;
+    font-weight: 700;
+    font-size: 30px;
+}
+.footer-left p{
+    font-size: 14px;
+    line-height: 1.8;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.footer-right h4{
+    margin-bottom:23px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.footer-right span{
+    font-family: "Roboto", sans-serif;
+}
+
