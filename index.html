@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Davat</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="themify-icon.css">
+    <link rel="stylesheet" href="header.css">
+    <div w3-include-html="header.html"></div>
 </head>
 <body style="margin: 0;">
-    <header>
-    <div class="main-header">
+    <!-- <div class="main-header">
         <div class="left-header">
             <ul class="left-header-ul">
                 <li><a href="#home">Home</a></li>
@@ -26,8 +26,7 @@
                 <li><a href="#contactus">Contact Us</a></li>
             </ul>
         </div>
-    </div>
-    </header>
+    </div> -->
     <section>
         <div class="carousel">
             <div class="carousel-left">
@@ -77,7 +76,7 @@
     </section>
     <footer>
         <div class="footer-main">
-            <div class="footer-left" style="padding: 4% 40% 0 0;">
+            <div class="footer-left" style="padding: 4% 35% 0 0;">
                 <h4>Social Presence</h4>
                 <p>Stay updated with our latest trends and updates.<br>Do connect here to build a professional relation with us.</p>
                 <div class="icons">
@@ -103,4 +102,36 @@
         </div>
     </footer>
 </body>
+<script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /* Loop through a collection of all HTML elements: */
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /* Make an HTTP request using the attribute value as the file name: */
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+              /* Remove the attribute, and call this function once more: */
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /* Exit the function: */
+          return;
+        }
+      }
+    }
+    </script>
+    <script>
+        includeHTML();
+        </script>
 </html>
