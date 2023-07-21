@@ -185,7 +185,7 @@
 }
 .footer-main{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: inherit;
     height: 400px;
     padding: 0 10% 7% 10% ;
@@ -197,7 +197,7 @@
     width: 40%;
 }
 .footer-left h4{
-    margin-bottom: 23px;
+    margin-bottom: 20px;
     font-weight: 700;
     font-size: 30px;
 }
